@@ -1,0 +1,16 @@
+#intro{
+    /* height: calc(100vh - 4rem); */
+    /* width: 100vw; */
+    max-width: 70rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+/* .bg{
+    position: absolute;
+    top:-4rem;
+    z-index: -1;
+    right: 0;
+    height: 100vh;
+    
+} */
