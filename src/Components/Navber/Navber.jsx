@@ -9,19 +9,21 @@ const Navbar = () => {
     return (
         <div>
             <nav className='navbar'>
-        <img src={logo} alt="logo" className='logo' />
-       
+                <img src={logo} alt="logo" className='logo' />
 
-        <div className='desktopMenu'>
-        <Link className='navItem'>Home</Link>
-        <Link  className='navItem'>Projects</Link>
-        <Link  className='navItem'>About me</Link>
-        <Link  className='navItem'>Contact</Link>
-        </div>
-        <button className='desktopMenuBtn'>
-            <img className='contactLogo mr-2' src={contact} alt="" />
-           Contact Me
-        </button>
+
+                <div className='desktopMenu'>
+                    <Link className='navItem'>Home</Link>
+                    <Link className='navItem'>Projects</Link>
+                    <Link className='navItem'>About me</Link>
+                    <Link className='navItem'>Contact</Link>
+                </div>
+                <div>
+                    <button className='desktopMenuBtn'>
+                        <img className='contactLogo mr-2' src={contact} alt="" />
+                        Contact Me
+                    </button>
+                </div>
             </nav>
         </div>
     );
