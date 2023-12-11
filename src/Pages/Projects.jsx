@@ -1,5 +1,16 @@
 import { FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+import demo1 from '../../src/assets/Annotation 2023-12-12 000035.png'
+import demo2 from '../../src/assets/Annotation 2023-12-12 000757.png'
+import demo3 from '../../src/assets/Annotation 2023-12-12 000855.png'
+
+
+import polling1 from '../../src/assets/Annotation 2023-12-12 001255.png'
+import polling2 from '../../src/assets/Annotation 2023-12-12 001339.png'
+import polling3 from '../../src/assets/Annotation 2023-12-12 001448.png'
+
 
 
 
@@ -13,7 +24,21 @@ const Projects = () => {
             <div>
                 <h1 className="mx-auto text-center">Title:Event Management</h1>
                 <div className="card shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                     <Carousel>
+            <div>
+                <img src={demo1} />
+
+            </div>
+            <div>
+                <img src={demo2} />
+
+            </div>
+            <div>
+                <img src={demo3} />
+
+            </div>
+            
+        </Carousel>
                     <div className="card-body text-center">
                        
                         <p>Description:Event management(Health & Wealth Event.) website .Where denoted different kinds of event  about health and wealth </p>
@@ -46,7 +71,22 @@ const Projects = () => {
                 <h1 className="mx-auto text-center">Title: Project Survey and Polling</h1>
 
                 <div className="card shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                <Carousel>
+            <div>
+                <img src={polling1} />
+
+            </div>
+            <div>
+                <img src={polling2} />
+
+            </div>
+            
+            <div>
+                <img src={polling3} />
+
+            </div>
+            
+        </Carousel>
                     <div className="card-body text-center">
                       
                         <p>Description:Online polling  and survey where dashboard  divided in 3 user like admin ,surveyor and normal user.Normal User can't use admins and surveyor's dashboard. </p>
