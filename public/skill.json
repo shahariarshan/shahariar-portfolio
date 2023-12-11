@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/16YbPS7/html-system-websites-concept.jpg",
+    "name": "HTML"
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/LPMQk26/css.jpg",
+    "name": "RAW CSS"
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/kJDBRYw/Tailwind-CSS-15-Component-Libraries-UI-Kits.png",
+    "name": "Tailwind CSS"
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co/3cwxgrQ/javascript-frameworks.jpg",
+    "name": "JavaScript"
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co/tcMC4vp/React-JS.png",
+    "name": "React"
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co/Y8WRBtF/FA-article-node-JS-2x-1.png",
+    "name": "Node.js"
+  }
+]

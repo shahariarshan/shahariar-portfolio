@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Main from './Layout/Main';
 import Home from './Home/Home';
+import Projects from './Pages/Projects';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -15,7 +16,12 @@ const router = createBrowserRouter([
     children:[
       {
         path:'/',
-        element:<Home></Home>
+        element:<Home></Home>,
+        loader:()=>fetch('../public/skill.json')
+      },
+      {
+        path:'/projects',
+        element:<Projects></Projects>
       }
     ]
   },
@@ -23,6 +29,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-     <RouterProvider router={router} />
+   
+    <RouterProvider router={router} />
+    
   </React.StrictMode>,
 )

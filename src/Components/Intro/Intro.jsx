@@ -1,25 +1,35 @@
 
-import './intro.css'
+// import './intro.css'
 import introImg from '../../assets/1-removebg-preview.png'
-import hireMe from '../../assets/Untitled_design-removebg-preview.png'
-import { Link } from 'react-router-dom';
+import { FaDownload } from "react-icons/fa";
+
 const Intro = () => {
+
     return (
-       <section id='intro' className='flex'>
-        
-        <div className='introContent'>
-            <span className='hello'>Hello,</span>
-            <span className='introText'>I'm <span className='introName'>Shahariar  </span><br />
-            Frontend Developer</span>
-        <p className='introDes'>I am a fresher frontend developer and increasing more knowledge about it.</p>
-        <Link><button className='btn'><img  src={hireMe} alt="Hire Me" className='btnImg' />Hire Me</button></Link>
-        </div>
-        <div>
-           <img  src={introImg} alt="Profile" className='bg'/>
-           </div>
-          
-       </section>
+        <section  >
+            <div className='flex justify-between'>
+
+                <div className=' space-y-3 mt-[50vh] mx-auto'>
+                    <span className=' text-xl'>Hello,</span><br />
+                    <span className='text-3xl'>I'm <span className='text-yellow-300'>Shahariar Mohammad Hassan </span>  
+                       </span><br />
+                       <span className='text-2xl'> Junior Frontend Developer</span>
+
+                    <p className='introDes'>I am a fresher frontend developer and increasing more knowledge about it.</p>
+
+                    <a className='btn' target="blank" href='../../../public/Resume_11_12_2023_05_59_50_PM.pdf' download={true}><FaDownload></FaDownload>Download CV</a>
+                </div>
+
+                <img src={introImg} alt="" className='mt-36' />
+
+
+            </div>
+
+
+
+        </section>
     );
 };
 
 export default Intro;
+

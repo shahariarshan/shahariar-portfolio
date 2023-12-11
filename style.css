@@ -1,16 +1,4 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    background: transparent;
-    background-color:deepskyblue;
-    color: blanchedalmond;
-    font-family: 'Baskerville';
-}
-*body{
-    background: rgb(30, 35, 40); 
-     color: white;
-    overflow: hidden;
-    overflow-y: scroll;
 }
