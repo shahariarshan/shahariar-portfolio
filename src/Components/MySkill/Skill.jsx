@@ -4,9 +4,9 @@ import { useLoaderData } from "react-router-dom";
 
 const Skill = () => {
     const loader = useLoaderData()
-    console.log(loader);
+    // console.log(loader);
     return (
-       <div className="mt-10">
+       <div className="mt-10" name='skill'>
        <div className="text-center mx-auto">
        <h1 className=' text-5xl font-serif' >My Skill</h1>
         <div className="divider divider-warning"></div>
@@ -21,13 +21,11 @@ const Skill = () => {
                   
                   
                 </div>
-                {/* <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60"></div>
-                <div className="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[60%] group-hover:translate-y-0 transition-all">
-                  
-                </div> */}
+               
               </div>)
             }
         </div>
+       
        </div>
     );
 };

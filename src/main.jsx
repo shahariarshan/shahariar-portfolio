@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import Main from './Layout/Main';
 import Home from './Home/Home';
-import Projects from './Pages/Projects';
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -18,11 +18,8 @@ const router = createBrowserRouter([
         path:'/',
         element:<Home></Home>,
         loader:()=>fetch('../public/skill.json')
-      },
-      {
-        path:'/projects',
-        element:<Projects></Projects>
       }
+      
     ]
   },
 ]);

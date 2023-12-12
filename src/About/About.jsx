@@ -2,7 +2,7 @@ import about from '../../src/assets/3.jfif'
 
 const About = () => {
     return (
-<div className='mt-16'>
+<div className='mt-16' name='about'>
     <h1 className='text-center mx-auto text-5xl font-serif' >About Me</h1>
     <div className="divider divider-warning"></div>
 <div className="hero w-full">
