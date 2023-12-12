@@ -34,6 +34,11 @@ const Navbar = () => {
             {
                 id:5,
                 link:'skill'
+            },
+            {
+                id:6,
+                link:  
+                'Contact Me'
             }
         ]
     return (
@@ -60,9 +65,9 @@ const Navbar = () => {
                             ))}
                     </ul>
                 </div>
-                <button  className='lg:ml-36'>   
+                {/* <button  className='lg:ml-36'>   
                    <AiFillContacts className='mr-3 text-lg'></AiFillContacts><span >Contact Me</span>
-                </button> 
+                </button>  */}
             </div>
     );
 };

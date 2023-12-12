@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom';
+/* eslint-disable react/no-unescaped-entities */
+
 import about from '../../src/assets/3.jfif'
 
 const About = () => {

@@ -39,7 +39,7 @@ const Projects = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:p-10 ">
 
                 <div>
-                    <h1 className="mx-auto text-center">Title:Event Management</h1>
+                    <h1 className="mx-auto text-center text-2xl uppercase font-semibold text-amber-200">Event Management</h1>
                     <div className="card shadow-xl mt-5">
                         <Carousel>
                             <div>
@@ -81,7 +81,7 @@ const Projects = () => {
                     </div>
                 </div>
                 <div>
-                    <h1 className="mx-auto text-center">Title:Donation Camping</h1>
+                    <h1 className="mx-auto text-center text-2xl uppercase font-semibold text-amber-200">Donation Camping</h1>
                     <div className="card shadow-xl mt-5">
                         <Carousel>
                             <div>
@@ -139,7 +139,7 @@ const Projects = () => {
             </div> */}
                 {/* 3 */}
                 <div>
-                    <h1 className="mx-auto text-center">Title: Project Survey and Polling</h1>
+                    <h1 className="mx-auto text-center text-2xl uppercase font-semibold text-amber-200"> Project Survey and Polling</h1>
 
                     <div className="card shadow-xl mt-5">
                         <Carousel>
