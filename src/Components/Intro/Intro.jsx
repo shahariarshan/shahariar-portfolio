@@ -1,13 +1,21 @@
+/* eslint-disable react/no-unescaped-entities */
 
 // import './intro.css'
+import { useEffect } from 'react';
+
 import introImg from '../../assets/1-removebg-preview.png'
 import { FaDownload } from "react-icons/fa";
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 const Intro = () => {
+    useEffect(() => {
+        Aos.init();
+      }, [])
 
     return (
         <section  >
-            <div className='flex justify-between'>
+            <div className='flex justify-between' data-aos="zoom-in-up">
 
                 <div className=' space-y-3 mt-[50vh] mx-auto'>
                     <span className=' text-xl'>Hello,</span><br />

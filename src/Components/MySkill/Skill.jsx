@@ -1,12 +1,17 @@
 import { useLoaderData } from "react-router-dom";
-
+import 'aos/dist/aos.css'
+import Aos from "aos";
+import { useEffect } from "react";
 
 
 const Skill = () => {
+  useEffect(() => {
+    Aos.init();
+  }, [])
     const loader = useLoaderData()
     // console.log(loader);
     return (
-       <div className="mt-10" name='skill'>
+       <div className="mt-10" data-aos="fade-up-right" name='skill'>
        <div className="text-center mx-auto">
        <h1 className=' text-5xl font-serif' >My Skill</h1>
         <div className="divider divider-warning"></div>
