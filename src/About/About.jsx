@@ -1,10 +1,16 @@
 /* eslint-disable react/no-unescaped-entities */
 
 import about from '../../src/assets/3.jfif'
-
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from 'react';
 const About = () => {
+  useEffect(() => {
+    Aos.init();
+  }, [])
+
   return (
-    <div className='mt-16' name='about'>
+    <div className='mt-16' name='about' data-aos="flip-up">
       <h1 className='text-center mx-auto text-5xl font-serif' >About Me</h1>
       <div className="divider divider-warning"></div>
       <div className="hero w-full">

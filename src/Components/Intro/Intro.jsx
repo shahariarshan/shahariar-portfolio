@@ -25,7 +25,7 @@ const Intro = () => {
 
                     <p className='introDes'>I am a fresher frontend developer and increasing more knowledge about it.</p>
 
-                    <a className='btn' target="blank" href='../../../public/Resume_11_12_2023_05_59_50_PM.pdf' download={true}><FaDownload></FaDownload>Download CV</a>
+                    <a className='btn motion-safe:hover:-translate-x-0.5 hover:bg-sky-700 motion-safe:transition focus:border-blue-400' target="blank" href='/Resume_11_12_2023_05_59_50_PM.pdf' download={true}><FaDownload></FaDownload>Download CV</a>
                 </div>
 
                 <img src={introImg} alt="" className='mt-36' />
