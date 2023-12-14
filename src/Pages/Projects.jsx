@@ -135,7 +135,8 @@ const Projects = () => {
                 </div>
                 {/* 2 */}
                 <div>
-                    <h1 className="mx-auto text-center">Title: Fashion And Apparel</h1>
+                    
+                    <h1 className="mx-auto text-center text-2xl uppercase font-semibold text-amber-200">Fashion And Apparel</h1>
                     <div className="card shadow-xl mt-5">
                         <Carousel>
                             <div>

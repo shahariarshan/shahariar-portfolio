@@ -1,83 +1,23 @@
-#intro{
-    height: calc(100vh - 4rem);
-     width: 100vw;
-    max-width: 75rem;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
+.blob{
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+
+    background-position: center ;
+    margin: 20px;
+    margin-top: 35vh;
+    box-shadow: 0 5px 5px rgba(250, 13, 13, 0.7);
+    animation: animate 5s ease-in-out infinite;
+    transition: all 1s ease-in-out;
 }
-.image{
-    position: absolute;
-    top:-1rem;
-    /* z-index: 3; */
-    right: 0;
-    object-fit: cover;
-    /* height: 100vh; */
-    
-}
-.introContent{
-    height: 100vh;
-    width: 100vw;
-    padding: 2rem;
-    z-index: 1;
-    font-size: 3rem;
-    font-weight: 700;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow: scroll;
-}
-.hello{
-    font-size: 1.75rem;
-    font-weight: 100;
-}
-.introName{
-    color: orangered;
-}
-.introDes{
-    font-size: medium;
-    font-weight: 100;
-    
-}
-.btn{
- background: white;
- margin: 1rem 0;
- padding: 0.75rem 2rem;
- border: none;
- border-radius: 2rem;
-}
-.btnImg{
-    
-    object-fit: cover;
-    margin:0 0.25rem ;
-    height: 1rem;
-}
-@media screen and (max-width:840px) {
-    .bg{
-        right: -10vw;
+
+@keyframes animate {
+    0%,100%{
+        border-radius: 60% 40% 30% 70% /60% 30% 70% 40%;
     }
-    .introContent{
-        font-size: 4.5vw;
-    }
-    .hello{
-        font-size: 4.5vw;
+    50%{
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
     }
     
 }
-@media screen and  (max-width: 480px) {
-    .introContent {
-      flex-direction: column;
-    }
-  
-    .introContent {
-      order: 2; 
-      padding: 20px;
-      overflow: visible; 
-    }
-  
-    .image {
-      max-width: 100%;
-      width: 100%;
-      height: auto;
-    }
-  }
+

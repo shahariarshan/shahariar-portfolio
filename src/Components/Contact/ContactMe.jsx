@@ -4,6 +4,7 @@ import { IoLogoLinkedin } from "react-icons/io5";
 import { FaInstagram } from "react-icons/fa";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 import { useRef } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
 const ContactMe = () => {
     const form = useRef();
     const sendEmail = (e) => {
@@ -12,14 +13,15 @@ const ContactMe = () => {
 
         emailjs.sendForm('service_fmek28v', 'template_xq9dj9x', form.current, 'P3idp1Yid5vtbfzBH')
             .then((result) => {
-                console.log(result.text);
+                toast('Message sent Successful',result.text);
             }, (error) => {
-                console.log(error.text);
+                toast(error.text);
             });
     };
 
     return (
        <div className='mt-10'>
+        <div><Toaster/></div>
          <h1 className='text-center mx-auto text-5xl font-serif' >Contact  Me</h1>
          <div className="divider divider-warning"></div>
          <div className="flex justify-evenly mt-5 mb-5" name='Contact Me'>
